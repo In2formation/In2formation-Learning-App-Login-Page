@@ -1,0 +1,98 @@
+/* =========================================================
+   PROJECT LIBRARY HEADER
+   ========================================================= */
+.navbar {
+  background: #43c0f6;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT LOGO */
+.navbar-left .site-logo {
+  height: 60px;
+  margin-left: 120px;
+}
+
+/* CENTER LINKS */
+.navbar-center {
+  display: flex;
+  gap: 80px;
+  margin-top: 30px;
+}
+
+.navbar-center a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+.navbar-center a:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT SIDE: avatar + LANG + flags + name */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* avatar + text block */
+.student-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* avatar */
+.avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* text to the right of avatar */
+.student-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LANG + flags row */
+.lang-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.lang-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22px;
+  color: white;
+}
+
+/* flags */
+.flag {
+  width: 24px;
+  height: 12px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+/* student name under LANG row */
+.student-name {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: white;
+  text-decoration: none; /* removed the fixed underline on the name */
+}
+
+.student-name:hover {
+  text-decoration: underline; /* white underline only when mouse hovers on name */
+}

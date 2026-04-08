@@ -1,0 +1,30 @@
+{
+  "name": "2510-l4ft20-missionx-backend-t3",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Welcome to our Node.js backend project! This guide will help you set up the project and understand the folder structure.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mission-Ready/2510-L4FT20-missionx-backend-t3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mission-Ready/2510-L4FT20-missionx-backend-t3/issues"
+  },
+  "homepage": "https://github.com/Mission-Ready/2510-L4FT20-missionx-backend-t3#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "multer": "^2.0.2",
+    "mysql2": "^3.16.0"
+  }
+}

@@ -1,0 +1,121 @@
+.sidebar {
+  background: linear-gradient(180deg, #4FC3F7 0%, #29B6F6 100%);
+  width: 300px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.profileSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  margin-top: 60px;
+} 
+
+.profilePic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+} 
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.navItem:hover {
+  background-color: rgba(68, 64, 64, 0.15);
+}
+
+.navIcon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.navText {
+  line-height: 1.2;
+}
+
+.backButton {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 70px;
+  /* margin-top: auto; */
+}
+
+.backIcon {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.backIcon:hover {
+  transform: translateX(-3px);
+}
+
+.bottomIcons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+}
+
+.bottomIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bottomIcon:hover {
+  transform: translateY(-2px);
+}
+
+.bottomIconImg {
+  width: 24px;
+  height: 24px;
+}
+
+.bottomIconText {
+  font-size: 0.65rem;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }}

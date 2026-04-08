@@ -1,0 +1,35 @@
+
+
+.container {
+  display: flex;
+  height: calc(100vh - 140px);
+  position: relative;
+  background-color: #B2E4FA;
+  overflow: auto;
+}
+
+.contentWrapper {
+  flex: 1;
+  position: relative;
+  width: calc(100% - 236px);
+  margin-left: 150px;
+  padding-top:25px;
+  transition: width 0.3s ease, margin-left 0.3s ease;
+  scrollbar-color: #888 #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  overflow: auto;
+ 
+}
+
+.content {
+  flex: 1 1 auto;
+  width: 100%;
+  overflow: auto;
+}
+
+
+html, body {
+  overflow: auto;
+}

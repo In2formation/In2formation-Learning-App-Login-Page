@@ -1,0 +1,193 @@
+.pageContainer {
+    width: 100%;
+    /* padding-bottom: 0px; Space for fixed footer */
+    box-sizing: border-box;
+    background-color: #B2E4FA;
+    margin-left: 20px;
+    z-index: 1;
+    overflow: auto;
+}
+
+.contentWrapper {
+    width: 100%;
+    padding: 20px 40px 0px 100px; 
+    box-sizing: border-box;
+}
+
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-left: 100px;
+}
+
+.pageTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #444;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.headerActions {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.downloadBtn,
+.completeBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: #666;
+  cursor: pointer; 
+  opacity: 1;
+  transition: transform 0.2s ease, color 0.2s ease; 
+}
+
+.downloadBtn:hover,
+.completeBtn:hover {
+  transform: translateY(-3px); 
+  color: #2196F3; 
+}
+
+
+.submissionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 40px ;
+}
+
+
+.submissionRow {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+
+.selectionBox {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.submissionRow:hover .selectionBox {
+  transform: translateY(-5px);
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  cursor: pointer; /* Shows clickable cursor */
+}
+
+/* SUBMISSION CARD - Only a shadow, no border */
+.submissionCard {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth lift effect */
+}
+
+/* Remove hover scale/transform effects */
+.submissionCard:hover {
+  transform: translateY(-2px); /* Lifts the card up */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); /* Deepens shadow as it lifts */
+}
+
+.studentInfo {
+  flex-shrink: 0;
+}
+
+.studentPhoto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.submissionDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers name and image group */
+    text-align: center;
+}
+
+.submissionTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.projectPreview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.projectImage {
+    width: 220px; 
+    height: auto;
+    border-radius: 5px; 
+}
+
+/* ENLARGE BUTTON - No border or hover change */
+.enlargeBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  border: none;
+  color: #666; 
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.enlargeBtn:hover {
+  transform: scale(1.05); /* Slightly grows the text/icon on hover */
+  color: #333;
+}
+
+.timestamp {
+  align-self: flex-start;
+  text-align: right;
+  min-width: 150px;
+  color: #777;
+}
+
+.date {
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.time {
+  font-size: 0.85rem;
+}
+
+/* Removed selection indicator overlay to keep card clean */
+.selectedIndicator {
+  display: none;
+}

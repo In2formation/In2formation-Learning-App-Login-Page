@@ -1,0 +1,271 @@
+/* IMPORT URL FOR FONT PACKAGE etc */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* =========================================================
+   ROOT VARIABLES (Adobe XD Colours)
+   ========================================================= */
+:root {
+  --blue-primary: #43c0f6;
+  --blue-light: #b9e6ff;
+  --grey-bg: #f5f7fa;
+  --grey-border: #e0e6ed;
+  --grey-dark: #444;
+  --text-dark: #333;
+}
+
+/* =========================================================
+   GLOBAL BASE STYLES
+   ========================================================= */
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--grey-bg);
+}
+
+/* =========================================================
+   MAIN LAYOUT STRUCTURE
+   ========================================================= */
+.app-container {
+  display: flex;
+  margin-left: 256px;
+  min-height: calc(100vh - 420px);
+}
+
+/* =========================================================
+   SIDEBAR —
+   ========================================================= */
+
+.sidebar {
+  width: 240px;
+  background: #ffffff;
+  border-right: 1px solid #e0e6ed;
+  padding: 0 26px; /* no extra padding at top */
+  margin-top: 210px; /* makes the sidebar aligned with the other tabs e.g. Beginner/Intermediate/Advanced to the right etc */
+}
+
+/* Headings e.g. SUBSCRIPTION /ACTIVITY TYPE / YEAR LEVEL /SUBJECT MATTER */
+.filter-panel h3 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  color: #707070; /* matches Adobe colour */
+
+  margin-top: 24px;
+  margin-bottom: 4px; /* tighter under the underline */
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.filter-panel h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55%;
+  height: 1px;
+  background: #707070;
+  border-radius: 2px;
+}
+
+.filter-panel label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+  color: #6a6a6a;
+
+  margin: 0; /* no margin at all */
+  padding: 0; /* no padding */
+  line-height: 14px; /* tiny line height to close vertical gaps */
+}
+
+.filter-panel input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #43c0f6;
+}
+
+/* =========================================================
+   MAIN CONTENT COLUMN
+   ========================================================= */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #6a6a6a;
+}
+
+.topbar {
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--grey-border);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* =========================================================
+   PROJECT LIBRARY
+   ========================================================= */
+.project-library .page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #707070;
+}
+
+.project-library .page-description {
+  margin-bottom: 28px;
+  color: #707070;
+  font-size: 0.95rem;
+}
+
+/* PROJECT GRID */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: flex-start;
+}
+
+/* =========================================================
+   PROJECT CARDS (Adobe XD Accurate)
+   ========================================================= */
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================================
+   CONTROLS ABOVE PROJECT GRID
+   ========================================================= */
+
+/* Overall wrapper */
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px; /* Adobe spacing */
+  padding: 0 4px; /* Centers nicely under title */
+}
+
+/* =======================
+   DIFFICULTY TABS (LEFT)
+   ======================= */
+.difficulty-tabs {
+  display: flex;
+  gap: 6px; /* Adobe XD spacing between tabs */
+}
+
+.difficulty-tab {
+  background: #ffffff;
+  border: 1px solid #d2d5da; /* Adobe light gray border */
+  border-radius: 4px; /* EXACT from XD */
+  padding: 6px 18px; /* Pixel matched */
+  font-size: 12.5px; /* XD font size */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #4a4a4a; /* Adobe dark gray text */
+  cursor: pointer;
+  letter-spacing: 0.25px; /* Subtle Adobe letter spacing */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.difficulty-tab.active {
+  background: #0c64f1;
+  color: white;
+  border-color: #43c0f6;
+}
+
+/* =======================
+   SHOW SELECTOR (RIGHT)
+   ======================= */
+.show-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.show-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 2px;
+}
+
+.show-btn {
+  background: white;
+  color: #4a4a4a;
+  border: 1px solid #d2d5da;
+  border-radius: 4px;
+  padding: 4px 14px; /* exact padding from XD */
+  font-size: 12.5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+}
+
+.show-btn.active {
+  background: #0c64f1;
+  color: white;
+  border-color: #43c0f6;
+}
+
+/* ===== PROJECT LIBRARY ACTIONS FOR BUTTONS ======================================*/
+
+.project-library-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 4px; /* hopefully aligns btn with project grid on the right */
+  gap: 12px;
+  margin-top: 36px;
+  margin-bottom: 8px;
+}
+
+/* BASE STYLING FOR BUTTONS: like a default setting */
+.pl-btn {
+  border: none;
+  cursor: pointer;
+
+  padding: 10px 18px;
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background-color: #0c64f1;
+  color: #f0f3f5;
+  text-transform: uppercase;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+}
+
+/* STUDENT & TEACHER: BACK TO TOP BUTTON */
+.pl-btn-top {
+  background-color: #f4b740;
+}
+/* TEACHER ONLY BACK TO DASHBOARD BTN (PINK) */
+.pl-btn-dashboard {
+  background-color: #ff4fa3;
+  border: 2px solid #ff4fa3;
+}
+
+/* Hover effect */
+.pl-btn:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,266 @@
+
+.hero {
+ 
+  padding: 80px 20px;
+  text-align: left;
+  color: white;
+  width: 100%;   
+  /* margin-left: -170px;     */
+  background-image: url('../../../../assets/Home/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;   
+  background-position: center; 
+  height: auto; /* ✅ allows content to fit */
+  max-height: 208px; /* adjust until it matches your laptop design */
+  overflow: hidden;  /* prevents the background from forcing extra space */
+          
+}
+
+.title {
+  font-size: 60px;
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  margin-left: 150px;
+  padding-left: 150px;
+  margin-right: 1100px;
+  margin-top: -40px;
+ 
+}
+
+.future {
+  color: #3cc1f0; 
+}
+
+.subtitle {
+  font-family: Open Sans, Regular;
+    text-align: justify;
+  text-justify: inter-word;
+
+  font-size: 24px;
+  color: #6C6C6C;
+  margin-left: 250px;
+  padding-left: 50px;
+  margin-right: 1150px;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.buttonGroup {
+  font-family: Nunito;
+  display: flex;
+  font-weight: bold;
+  flex-direction: row;   
+  gap: 50px;
+  align-items: flex-start;
+  margin-left: 385px;
+  margin-top: 30px;
+}
+
+.button {
+  width: 175px;
+  height: 35px;             
+  padding:5px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.32px;
+  border-radius: 7px;
+  /* border: 3px solid #43C0F6; */
+  box-shadow: 0px 4px 5px #00000029;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 1;
+  font-style: bold;
+}
+
+
+.button.learnMore {
+  font: normal normal 900 16px/22px Nunito;
+  background: #FFFFFF;
+  /* color: #000000; */
+  border: 3px solid #43C0F6;
+  color: black;
+}
+
+.button.learnMore:hover {
+  background-color: #43C0F6;
+  color: #fff;
+}
+
+
+
+
+.button.signUp {
+  background: #F91C85  0% 0% no-repeat padding-box;
+  color: #F0EFEF;
+  font: normal normal 900 16px/22px Nunito;
+}
+
+.signUpWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px; /* SAME WIDTH AS THE BUTTON */
+}
+
+.subText {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  color: #606060;
+  margin-top: 6px;
+  text-align: center;
+  opacity: 0.9;
+  line-height: 1.3;
+  margin-left: 5px;
+
+
+  width: 100%;          /* match wrapper width */
+  white-space: normal;  /* allow wrapping */
+}
+
+
+
+
+
+
+
+/* .button:hover {
+  background-color: #005fa3;
+} */
+
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .buttonGroup {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: centre;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 120px 40px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+.future {
+  color: #3cc1f0;  
+  font: inherit;    
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .title {
+    margin-left: 120px;
+    padding-left: 120px;
+    margin-right: 900px;
+    margin-top: -70px;
+  }
+
+  .subtitle {
+    margin-left: 200px;
+    padding-left: 40px;
+    margin-right: 950px;
+  }
+
+  .buttonGroup {
+    margin-left: 260px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .title {
+    margin: 0;
+    padding: 0;
+    font-size: 42px;
+  }
+
+  .subtitle {
+    margin: 10px 0 20px 0;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .buttonGroup {
+    margin: 20px auto 0 auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 15px;
+    height: auto;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin: 10px 0 20px 0;
+    padding: 0;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto 0 auto;
+    align-items: center;
+  }
+
+  .button {
+    width: 160px;
+    height: 40px;
+  }
+
+  .signUpWrapper {
+    width: 160px;
+  }
+
+  .subText {
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

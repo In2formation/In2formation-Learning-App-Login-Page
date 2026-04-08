@@ -1,0 +1,88 @@
+.offerSection {
+ 
+  width: 100%;
+  max-width: 1200px;   
+  margin: 0 auto;      
+  padding: 40px 20px;  
+  box-sizing: border-box;
+}
+
+
+.heading {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  color: #6C6C6C;
+  top: 583px;
+left: 266px;
+width: 292px;
+height: 57px;
+  opacity: 1;
+  text-align: left;
+  margin-top: 80px;
+  margin-left: -60px;
+  /* margin-right: 1100px; */
+
+}
+
+.intro {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  margin-top: -20px;
+  margin-left: -60px;
+  margin-right: 720px;
+  color: #333;
+}
+
+.subHeading {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #333;
+  text-align: left;
+  margin-top: 100px;
+  margin-left: -65px;
+  margin-bottom: -10px;
+}
+
+@media (max-width: 1024px) {
+  .heading,
+  .intro,
+  .subHeading {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .intro {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .subHeading {
+    font-size: 28px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  .intro {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .subHeading {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+}
+

@@ -1,0 +1,42 @@
+.row {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.info p {
+  color: gray;
+}
+
+.circles {
+  display: flex;
+  gap: 12px;
+  
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #A2A0A0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  color: #5a5a5a;
+  box-shadow: 0px 3px 6px #00000040;
+}
+
+.completed {
+  background: #8de8c4;
+  border-color: #8de8c4;
+}

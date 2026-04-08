@@ -1,0 +1,70 @@
+/* General page formatting */
+.spv-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wrapper between header and footer */
+.student-profile-wrapper {
+  flex: 1; /* keeps footer at bottom */
+  width: 100%;
+  background: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 165px; /* pushes box down with button to match Adobe spec */
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Main container holding StudentCard */
+.student-profile-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* This wraps the button for easier positioning */
+.spv-actions {
+  width: 100%;
+  max-width: 1200px; /*  matches student card conttainer */
+  padding: 0 40px 40px; /*  matches container padding */
+  display: flex;
+  justify-content: flex-end; /* puts btn on right side  */
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+/* BACK TO PROJECTS BUTTON */
+.spv-button {
+  padding: 12px 22px;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background: #ff4fa3;
+  border: 1px solid #ff4fa3;
+  color: white;
+
+  transition: 0.2s ease;
+}
+
+.spv-button:hover {
+  background: #ff2f94;
+  border-color: #ff2f94;
+}
+
+.spv-button:active {
+  transform: translateY(1px);
+}

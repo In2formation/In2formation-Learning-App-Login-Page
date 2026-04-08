@@ -1,0 +1,115 @@
+/* OUTER LAYOUT for both boxes */
+.student-card-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* SHARED CARD STYLING */
+.student-avatar-box,
+.student-info-box {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* LEFT BOX */
+.student-avatar-box {
+  width: 261px;
+  height: 455px;
+  padding: 30px 20px;
+  text-align: center;
+  overflow: hidden; /* prevents any spill outside the box */
+}
+
+.student-avatar-box img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.student-btn:hover {
+  background: #eaf6ff;
+}
+
+/* RIGHT BOX */
+.student-info-box {
+  width: 760px;
+  min-height: 712px;
+  height: auto; /* had to add this because text was overflowing at the bottom */
+  padding: 50px 55px;
+  box-sizing: border-box;
+}
+
+.student-info-box h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+/* BUTTONS: Edit Profile and Change Info btns */
+.student-btn {
+  width: 140px;
+  padding: 10px 0;
+  margin: 10px auto;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #5bbcff;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #0077cc;
+  cursor: pointer;
+  display: block;
+}
+
+/* GRID LAYOUT */
+.student-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  row-gap: 16px;
+  column-gap: 90px;
+  font-size: 24px;
+}
+
+.student-info-grid .label {
+  color: #9a9a9a;
+  font-weight: 700;
+}
+
+.student-info-grid .value {
+  color: #9a9a9a;
+  font-weight: 600;
+}
+
+/* SPV NOTES */
+/* ISSUES RESOLVED: --------------------------------------
+/* PROBLEM
+
+I had some issues with image overflow for #12 Rawiri Fletcher
+this was only for his profile pic when it rendered into the "Student Box" 
+I had CSS styling intended for student avatar:
+
+.student-avatar{...}
+
+BUT there was no className in StudentCard.jsx so the styling was not applied. 
+
+FIX APPLIED: ---------------------------------
+I used a descendant selector to keep the markup simple 
+
+.student-avatar-box img {......}
+
+This forced all images to behave consistently
+
+
+

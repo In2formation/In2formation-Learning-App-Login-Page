@@ -1,0 +1,141 @@
+.header {
+  background-color: white;
+  justify-content: space-between;
+  padding: 5px;
+  z-index: 100;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  padding-left: 20px ;
+}
+
+/* Project Progress Section */
+.projectProgress {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  margin-left: 55px;
+}
+
+.projectLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projectTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.projectIntro {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.stepIndicator {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.currentStep {
+  background-color: #FBF5BD;
+  color: grey;
+  width: 40px;
+  height: 40px;
+  border-color: #4FC3F7;
+  border: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.progressDots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #4FC3F7;
+  background-color: white;
+}
+
+/* Header Buttons */
+.headerButtons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.startProjectBtn,
+.askTeacherBtn,
+.moreProjectsBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.startProjectBtn {
+  background-color: #F5A623;
+  color: white;
+}
+
+.askTeacherBtn {
+  background-color: #F94C84;
+  color: white;
+}
+
+.moreProjectsBtn {
+  background-color: #4FC3F7;
+  color: white;
+}
+
+.startProjectBtn:hover,
+.askTeacherBtn:hover,
+.moreProjectsBtn:hover {
+  transform: translateY(-2px);
+}
+
+.languageFlags {
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.flag {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 4px;
+}

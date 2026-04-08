@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+  margin: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 100px;
+  display: flex;
+  align-items: center ;
+  justify-content: bottom;
+}
+
+.footertext {
+  color: black;
+  font-size: 26px;
+  z-index: 10000;
+
+  top: 1040px;
+  left: 855px;
+  width: 210px;
+  height: 30px;
+}
+
+
+
+

@@ -1,0 +1,45 @@
+/* =========================================================
+   FOOTER - standard footer formatting 
+   ========================================================= */
+.footer {
+  background: var(--blue-light);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.4fr;
+  column-gap: 48px;
+  padding: 124px 96px 64px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: 1px solid #d1dce5;
+  box-sizing: border-box;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #707070;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.footer-section a {
+  display: block;
+  font-size: 18px;
+  color: #707070;
+  text-decoration: none;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section p {
+  font-size: 18px;
+  color: #707070;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}

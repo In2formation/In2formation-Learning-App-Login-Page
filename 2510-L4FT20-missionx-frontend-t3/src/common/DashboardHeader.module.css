@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px ;
+  background: white;
+  border-bottom: 1px solid #c9e9ff;
+
+}
+
+.logo {
+  width: 145.99px;
+  height: 60px;
+  padding-left:30px;
+}
+
+.rightButtons {
+  display: flex;
+  gap: 10px;
+  padding-right:130px;
+}
+
+.rightButtons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.help {
+  background: #ff3ebf;
+  color: white;
+}
+
+.more {
+  background: #2baaff;
+  color: white;
+}
+
+
+.headers{
+   display: flex;
+  gap: 8px;
+  margin-left: 10px;
+}
+.flags {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
